@@ -1,5 +1,5 @@
 def begins_with_r(array)
-  array.all? {|item| str.start_with?("r")}
+  array.all? {|item| item.start_with?("r")}
 end
 
 def contain_a(array)
