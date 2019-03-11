@@ -7,5 +7,10 @@ def contain_a(array)
 end
 
 def first_wa(array)
-  array.first("wa")
+  array.each do |item|
+    if item.to_s.start_with?("wa")
+      return item
+    break
+  end
+end
 end
