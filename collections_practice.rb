@@ -4,4 +4,8 @@ end
 
 def contain_a(array)
   array.select {|item| item.include?("a")}
-end  
+end
+
+def first_wa(array)
+  array.first("wa")
+end
