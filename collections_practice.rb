@@ -18,3 +18,8 @@ end
 def remove_non_strings(array)
   array.delete_if {|item| !(item.is_a? String)}
 end
+
+def count_elements(harray)
+  harray.group_by(&:itself) .map{|k, v| k.merge(count: v.length)}
+end
+
